@@ -1,0 +1,163 @@
+{
+    "swagger": "2.0",
+    "produces": [
+        "application/json"
+    ],
+    "info": {
+		"description": "Generate Documents.json.",
+        "version": "1.0.0",
+        "title": "Generate Documents.json",
+        "termsOfService": "",
+        "contact": {
+            "email": "ocsoon.jin@madorca.com"
+        }
+    },
+    "host": "demo.com",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "User",
+            "description": "유저 관련"
+        },
+		{
+			"name" :"Server",
+			"description":"서버관련"
+		},
+		{
+            "name": "Friend",
+            "description": "친구"
+		},
+		{
+			"name":"Team",
+			"description":"팀관련"
+		},
+        {
+            "name": "Character",
+            "description": "영웅 관련"
+        },
+        {
+            "name": "Item",
+            "description": "아이템 관련"
+        },
+        {
+            "name": "Scene",
+            "description": "시나리오 관련"
+        },
+        {
+            "name": "Stage",
+            "description": "스테이지 관련"
+        },
+        {
+            "name": "FriendRaid",
+            "description": "친구레이드 관련"
+        },
+        {
+            "name": "Rank",
+            "description": "랭킹 관련"
+        },
+        {
+            "name": "PvP",
+            "description": "PVP 관련"
+        },
+        {
+            "name": "Affinity",
+            "description": "호감도"
+        },
+        {
+            "name": "Potion",
+            "description": "포션 관련"
+        },
+        {
+            "name": "Mail",
+            "description": "우편함"
+        },
+        {
+            "name": "Mission",
+            "description": "미션"
+        },
+        {
+            "name": "TeamBattle",
+            "description": "팀배틀"
+        },
+        {
+            "name": "Tutorial",
+            "description": "튜토리얼"
+        },
+        {
+            "name": "Adventure",
+            "description": "모험"
+        },
+        {
+            "name": "InAppPurchase",
+            "description": "IAP Test"
+        },
+        {
+            "name": "Coupon",
+            "description": "Coupon API"
+        },
+		{
+			"name":"Banner",
+			"description":"배너 이벤트류"
+		},
+		{
+			"name":"Event",
+			"description" : "기타 이벤트"
+		},
+		{
+			"name":"Web",
+			"description":"This is no response, it is just location api."
+		}
+    ],
+    "paths": {
+        "/info/notice": {
+            "get": {
+                "tags": [
+                    ""
+                ],
+                "summary": "",
+                "description": "",
+                "consumes": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "produces": [
+                     "application/json",
+                    "application/xml"
+                ]
+            }
+        },
+        "/pub/login/{uuid}/{ver}": {
+            "get": {
+                "tags": [
+                    ""
+                ],
+                "summary": "",
+                "description": "",
+                "consumes": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": "",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "ver",
+                        "in": "path",
+                        "description": "",
+                        "required": true,
+                        "type": "string"
+                    }
+                ]
+            }
+        }
+	}
+}
